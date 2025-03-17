@@ -13,6 +13,10 @@ a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
 .center {
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
@@ -26,6 +30,7 @@ a {
     align-content: center;
     justify-content: space-around;
     align-items: center;
+    height: 75px;
 }
 
 .header__left {
@@ -95,10 +100,11 @@ a {
 }
 
 .container {
-    width: 1140px;
+    width: 1146px;
     padding-left: calc(50% - 573px);
     padding-right: calc(50% - 573px);
 }
+
 
 .top__images {
     display: flex;
@@ -196,4 +202,98 @@ a {
     line-height: normal;
     background-color: #fff;
     border: 1px solid #FF6A6A;
+}
+
+@media (max-width: 1024px) {
+    .center {
+        padding-left: calc(50% - 512px);
+        padding-right: calc(50% - 512px);
+    }
+
+    .header {
+        height: 74px;
+    }
+
+    .header__left {
+        padding-bottom: 19px;
+    }
+
+    .header__right {
+        gap: 32px;
+        padding-bottom: 18px;
+        padding-top: 27px;
+    }
+    .header__logo {
+        padding-bottom: 18px;
+    }
+
+    .top__block {
+        display: grid;
+        grid-template-columns: repeat(2, 512px);
+        margin-bottom: 64px;
+        /*height: 367px;*/
+    }
+
+
+    .top__right_side{
+        margin-top: 138px;
+        margin-right: 332px;
+        margin-bottom: 138px;
+        width: 399px;
+    }
+
+    .top__heading {
+        font-size: 44px;
+    }
+
+    .top__subheading {
+        font-size: 24px;
+    }
+
+    .fashion {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 736px;
+        padding-left: calc(50% - 368px);
+        padding-right: calc(50% - 368px);
+    }
+
+    .top__images {
+        display: grid;
+        grid-template-columns: repeat(3, 232px);
+        gap: 19px;
+        margin-bottom: 109px;
+        width: 768px;
+        .top__img_acces {
+            grid-column: span 3;
+        }
+    }
+
+
+    .content__description {
+        margin-bottom: 72px;
+    }
+
+    .content__items {
+        grid-template-columns: repeat(2, 360px);
+        gap: 16px;
+        margin-bottom: 32px;
+    }
+
+    .heading__items {
+        margin: 25px 193px 12px 18px;
+    }
+
+    .text__items {
+        margin-bottom: 18px;
+        margin-right: 29px;
+    }
+
+    .price__items {
+        margin-bottom: 20px;
+        margin-left: 18px;
+    }
+
 }
