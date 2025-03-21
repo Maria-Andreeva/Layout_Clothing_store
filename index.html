@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сlothing store</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,21 +10,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
+<section class="container">
     <section class="header">
         <div class="header__left">
            <img class="header__img header__logo" src="./img/logo.png" alt="logo">
             <img class="header__img_search" src="./img/search.svg" alt="search">
         </div>
         <div class="header__right">
-            <label for="header__check" href="#"><img class="header__img_menu" src="./img/menu.svg" alt="menu"></label>
+            <!--<label for="header__check" href="#"--><img class="header__img_menu" src="./img/menu.svg" alt="menu">
+            <!--</label>-->
             <a href="#"><img class="header__img_lk" src="./img/lk.svg" alt="person account"></a>
             <a href="#">
                 <div class="five">5</div>
             <img class="header__img_basket" src="./img/basket.svg" alt="basket"></a>
         </div>
     </section>
-
+<!--
     <input class="header__checkbox" id="header__check" type="checkbox">
     <div class="mobile-menu">
         <div class="mobile-menu__link-site"></div>
@@ -57,7 +59,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div>-->
 
 
 
@@ -72,7 +74,7 @@
     </div>
 </div>
 </section>
-<section class="container">
+
 <section class="top__images">
     <img class="top__img" src="./img/for%20women.png" alt="for Women">
     <img class="top__img" src="./img/for%20men.png" alt="for Men">
@@ -175,7 +177,7 @@
     <button class="btn__item">Browse All Product</button>
 </div>
 </section>
-</section>
+
 
 <section class="feature center">
 <article class="feature__block">
@@ -214,7 +216,7 @@
         FOR OUR NEWLETTER AND PROMOTION
     </div>
     <div class="subscribe__button_right">
-        <input type="text" placeholder="   Enter Your Email" />
+        <input type="email" id="user-email" name="email" placeholder="   Enter Your Email" />
         <button class="subscribe__button_left">Subscribe</button>
     </div>
 </div>
@@ -246,6 +248,6 @@
 </nav>
 </section>
 
-
+</section>
 </body>
 </html>
